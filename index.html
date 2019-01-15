@@ -18,7 +18,7 @@
 		u{text-decoration: underline;}
 		s{text-decoration: line-through;}
 		i{font-style: italic;}
-		b{font-weight: bold;}
+		b, .bold{font-weight: bold;}
 		a:link, a:visited, a:active{text-decoration: none; color: inherit;}
 		.Fright{float: right;}
 		.Fleft{float: left;}
@@ -34,19 +34,31 @@
 		.relative{position: relative;}
 		.hidden{display: none;}
 		.flex-container{display: flex;}
-		.LightBlueBack{background: #5FBFF9 !important;}
+		.LightBlueBack{background: #5FBFF9 !important; margin-top: 40px;}
 		.marbot15{margin-bottom: 15px;}
+		.marbot30{margin-bottom: 30px;}
+		.martop30{margin-top: 30px;}
+		.blue-font{color: #294189;}
+		.font26{font-size: 26px;}
 		
 		header{padding: 10px 0; border-bottom: 1px solid #294189;}
 		.CTA{width: 237px; background-color: #294189; font-weight: bold; text-align: center; padding: 20px 0; font-size: 1.2em;}
 
-		.column{flex: 1; display: flex; justify-content: center;}
+		.column{flex: 1; display: flex; justify-content: center; padding: 5% 0;}
+		.column50{width: 50%;}
 		.column65{width: 65%;}
-		.blue-back{background-color: #294189; padding: 5% 0;}
+		.blue-back{background-color: #294189;}
 		.mop-back{background: url(images/hero_product_2.jpg) no-repeat; background-size: cover;}
-		.blue-back h1{font-size: 2.5em; margin-bottom: 20px;}
-		.blue-back h2{font-size: 1.7em; margin-bottom: 20px;}
-		.blue-back p{font-size: 1.4em; margin-bottom: 40px;}
+		h1{font-size: 45px; margin-bottom: 20px;}
+		h2{font-size: 34px; margin-bottom: 20px;}
+		.blue-back p{font-size: 26px;}
+
+		#kids-wrapper{background: url(images/hero_children2.jpg) no-repeat; background-size: cover;}
+		.opacity-blue{background-color: rgba(60,145,230,0.75); padding: 4% 3%; box-sizing: border-box;}
+		.number-div{float: left; border: 1px solid #fff; border-radius: 50%; width: 34px; height: 34px; text-align: center;
+					font-weight: bold; padding-top: 4px; box-sizing: border-box;}
+		.text-div{float: right; margin-left: 15px; font-weight: bold; width: 90%;}
+		.points-div{display: flex; align-items: center; margin-bottom: 30px;}
 	</style>
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -74,16 +86,59 @@
 			<div class="column mop-back"></div>
 		</div>
 		<div class="wrapper flex-container">
-			<div class="column blue-back">
+			<div class="column">
 				<div class="column65">
-				<h1>The Next Generation in Home Cleaning</h1>
-				<h2>The Amazing Self-Cleaning &amp; Self-Drying Mop & Bucket System</h2>
-				<p>30-Day Money Back Guarantee</p>
+				<h2 class="blue-font">Watch The Magic In Front Of Your Own Eyes</h2>
+				<p class="blue-font">The Secret is… the dual chamber bucket that washes your mop on one side and squeezes dry on the other. Avoid touching dirty cloths and dripping mucky water over your clean floors</p>
 				<a href="secureOrder.html"><div class="CTA LightBlueBack marbot15">Order Today</div></a>
-				<img src="images/visa-mc.png" alt="" style="background: #fff; padding: 5px;">
 				</div>
 			</div>
-			<div class="column mop-back"></div>
+			<div class="column">
+				<img src="images/hero_product.jpg" alt="" style="height: 321px; width: 570px;">
+			</div>
+		</div>
+		<div class="wrapper" id="kids-wrapper">
+			<div class="Fright column50 opacity-blue">
+				<h2 class="marbot30">The AutoClean Mop</h2>
+				<p class="font26 bold marbot30">Features &amp; Benefits</p>
+				<div class="points-container">
+					<div class="points-div">
+						<div class="number-div">1</div>
+						<div class="text-div">Innovative Microfiber Mop Head is gentle on all types of surfaces</div>
+						<div class="clear"></div>
+					</div>
+					<div class="points-div">
+						<div class="number-div">2</div>
+						<div class="text-div">The Dual Chamber - one side washes your mop and the other dries it</div>
+						<div class="clear"></div>
+					</div>
+					<div class="points-div">
+						<div class="number-div">3</div>
+						<div class="text-div">360 Degree Swivel Action for easy maneuverability</div>
+						<div class="clear"></div>
+					</div>
+					<div class="points-div">
+						<div class="number-div">4</div>
+						<div class="text-div">Low Profile Design gets under just about anything</div>
+						<div class="clear"></div>
+					</div>
+					<div class="points-div">
+						<div class="number-div">5</div>
+						<div class="text-div">Dry and Polish at the same time</div>
+						<div class="clear"></div>
+					</div>
+					<div class="points-div">
+						<div class="number-div">6</div>
+						<div class="text-div">Lightweight &amp; Portable</div>
+						<div class="clear"></div>
+					</div>	
+				</div>
+				<a href="secureOrder.html"><div class="CTA martop30">Order Today</div></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="wrapper">
+			
 		</div>
 		<footer>
 			<div class="container">
