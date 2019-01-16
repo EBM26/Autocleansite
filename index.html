@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/x-icon" href="images/logo.png" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-	<title>Autoclean Mop</title>
+	<title>Autoclean Mop | Home Page</title>
 <!-- 	<link rel="stylesheet" href="css/style.css">
  -->	<style>
 		*{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
@@ -36,7 +36,7 @@
 		.hidden{display: none;}
 		.flex-container{display: flex;}
 		.space-between{justify-content: space-between;}
-		.LightBlueBack{background: #5FBFF9 !important; margin-top: 40px;}
+		.LightBlueBack{background: #5FBFF9 !important; margin-top: 40px; border: 2px solid #5FBFF9 !important;}
 		.LightBlueColor{color: #5FBFF9;}
 		.marbot15{margin-bottom: 15px;}
 		.marbot20{margin-bottom: 20px !important;;}
@@ -49,10 +49,16 @@
 		.font26{font-size: 26px;}
 		.pad4{padding: 4%;}
 		.nomarg{margin: 0 !important;}
-		.desktop-hide{display: none;}
+		.desktop-hide, .spanish-text{display: none;}
 		
-		header{padding: 10px; border-bottom: 1px solid #294189;}
-		.CTA{width: 237px; background-color: #294189; font-weight: bold; text-align: center; padding: 20px 0; font-size: 1.2em;}
+		header{padding: 10px; border-bottom: 1px solid #294189; position: relative;}
+		.CTA{width: 237px; background-color: #294189; font-weight: bold; text-align: center; padding: 18px 0; font-size: 1.2em;
+			 border: 2px solid #294189;}
+		.CTA:hover{background-color: #fff; color: #294189; }
+		.language-button{width: 130px; border: 2px solid #294189; text-align: center; cursor: pointer; font-size: 22px;
+						 font-weight: bold; color: #294189; padding: 10px 0; position: absolute; left: 47%; top: 20%;}
+		.language-button:hover {color: #fff; background: #294189;}
+		.LightBlueBack:hover{color: #5FBFF9; background: #fff !important;}
 
 		.column{flex: 1; display: flex; justify-content: center; padding: 5% 0;}
 		.column50{width: 50%;}
@@ -98,7 +104,7 @@
 
 		@media only screen and (max-width: 960px) {
 			html,body{font-size: 16px;}
-
+			.language-button{position: initial; float: right; margin-top: 10px;}
 			.flex-container{display: block;}
 			.mobile-hide{display: none;}
 			.column65, .column50{width: 100%;}
@@ -129,6 +135,7 @@
 			<div class="row"></div>
 			<div class="container">
 				<a href="secureOrder.html"><div class="CTA Fright mobile-hide">Order Today</div></a>
+				<div class="language-button">Español</div>
 				<img src="images/logo.png" alt="" width="120">
 				<div class="clear"></div>
 			</div>
@@ -340,9 +347,29 @@
 	</div>
 		</div>
 		<footer class="pad4">
-			<p class="bold marbot20 font20 mobileFont14"><a href="secureOrder.html">Order Now</a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a> | <a href="terms.html">Terms and Conditions</a></p>
+			<p class="bold marbot20 font20 mobileFont14"><a href="secureOrder.html"><span class="english-text">Order Now</span><span class="spanish-text">Ordene Ahora</span></a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a> | <a href="terms.html">Terms and Conditions</a></p>
 			<p class="bold marbot20 font20 mobileFont14">&copy;Copyright 2019 Starlyte AutoClean Mop LLC - All Rights Reserved</p>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".language-button").click(function() {
+
+					function SpanishOn() {
+						$(".language-button").html("English");
+						$(".english-text").hide();
+						$(".spanish-text").show();
+					}
+
+					function SpanishOff() {
+						$(".language-button").html("Español");
+						$(".spanish-text").hide();
+						$(".english-text").show();
+					}
+
+					return (this.tog = !this.tog) ? SpanishOn() : SpanishOff();
+				})
+			})
+		</script>
 	</body>
 	</html>

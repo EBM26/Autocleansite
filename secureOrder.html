@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" type="image/x-icon" href="images/logo.png" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<title>Autoclean Mop | Secure Order Page</title>
+<!-- 	<link rel="stylesheet" href="css/style.css">
+ -->	<style>
+		*{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
+		html,body{margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; color: #1B263B; font-size: 18px;
+				  background: #E9ECF3; letter-spacing: .5px;}
+		img{border: none;}
+		li{list-style-type: none;}
+		div{display: block; margin: 0; padding: 0; box-sizing: border-box;}
+		u{text-decoration: underline;}
+		s{text-decoration: line-through;}
+		i{font-style: italic;}
+		b, .bold{font-weight: bold;}
+		a:link, a:visited, a:active{text-decoration: none; color: inherit;}
+		.Fright{float: right;}
+		.Fleft{float: left;}
+		.clear{clear: both;}
+		.wrapper{width: 100%; padding: 5% 0;}
+		.container{max-width: 1200px; margin: auto; width: 100%;}
+		.row{padding: 0 30px;}
+		.align-left{text-align: left;}
+		.inline{display: inline;}
+		.inline-block{display: inline-block;}
+		.uppercase{text-transform: uppercase;}
+		.center{text-align: center;}
+		.relative{position: relative;}
+		.hidden{display: none;}
+		.flex-container{display: flex;}
+		.space-between{justify-content: space-between;}
+		.LightBlueBack{background: #5FBFF9 !important; margin-top: 40px; border: 2px solid #5FBFF9 !important;}
+		.LightBlueColor{color: #5FBFF9;}
+		.marbot15{margin-bottom: 15px;}
+		.marbot20{margin-bottom: 20px !important;;}
+		.marbot30{margin-bottom: 30px;}
+		.marbot40{margin-bottom: 40px;}
+		.martop10{margin-top: 10px;}
+		.martop30{margin-top: 30px;}
+		.martop40{margin-top: 40px;}
+		.marright5per{margin-right: 5%;}
+		.blue-font{color: #294189 !important;}
+		.black-font{color: #1B263B;}
+		.font20{font-size: 20px;}
+		.font26{font-size: 26px;}
+		.font28{font-size: 28px;}
+		.pad4{padding: 4%;}
+		.nomarg{margin: 0 !important;}
+		.desktop-hide{display: none;}
+		sup{font-size: 12px;}
+		
+		header{padding: 10px; border-bottom: 1px solid #294189; position: relative; background: #fff;}
+		.CTA{width: 335px; background-color: #294189; font-weight: bold; text-align: center; padding: 18px 0; font-size: 1.2em;
+			 border: 2px solid #294189; color: #fff; margin-top: 40px;}
+		.CTA:hover{background-color: #fff; color: #294189; }
+		.language-button{width: 130px; border: 2px solid #294189; text-align: center; cursor: pointer; font-size: 22px;
+						 font-weight: bold; color: #294189; padding: 10px 0; float: right; margin-top: 10px;}
+		.language-button:hover {color: #fff; background: #294189;}
+		.LightBlueBack:hover{color: #5FBFF9; background: #fff !important;}
+		
+		.icon-style{vertical-align: middle; margin-right: 15px;}
+		.indent-div hr{border: 0; border-top: 1px solid #294189; margin-top: 30px;}
+		.order-item{margin-bottom: 50px; position: relative;}
+		.order-item img{vertical-align: top; margin-right: 30px;}
+		.plus-minus-div{font-weight: bold; font-size: 26px; position: absolute; top: 25%; left: 60%;}
+		.number-box{display: inline-block; border: 1px solid; padding: 0px 15px; margin: 0 10px;}
+		.plus, .minus{font-weight: bold; font-size: 30px; cursor: pointer;}
+		.checkbox{display: inline-block; width: 40px; height: 40px; border: 1px solid #294189; vertical-align: -10px; 
+				  margin-right: 10px; position: relative;}
+		.checkmark{position: absolute; font-size: 30px; right: 5px;}
+		.right-column{float: right; font-size: 24px; text-align: right;}
+		.right-text{margin-left: 130px; float: right; display: inline-block; margin-bottom: 10px; width: 80px;}
+		.left-text{display: inline-block;}
+
+		.input-field{width: 420px;	border: 1px solid #294189; font-size: 25px; padding: 20px;}
+		.checkbox2{display: inline-block; width: 35px; height: 35px; border: 1px solid #294189; vertical-align: -10px; 
+				  margin-right: 10px; position: relative; background: #fff;}
+		.checkmark2{position: absolute; font-size: 25px; right: 5px;}
+		.medium-field{width: 235px; margin-right: 30px;}
+		.small-field{width: 115px;}
+		.width48per{width: 48%;}
+
+		.circle-out{width: 36px; height: 36px; border-radius: 50%; border: 1px solid #294189; text-align: center; 
+					padding: 6px 2.5px 2px 2.5px; display: inline-block; margin-top: 40px; margin-right: 20px;
+				    vertical-align: -8px;}
+		.circle-in{background: #294189; width: 22px; height: 22px; border-radius: 50%; margin: auto;}
+
+		h1{font-size: 45px; margin-bottom: 40px;}
+		h2{font-size: 30px; margin-bottom: 20px;}
+		
+
+		footer{background: #1B263B; text-align: center; color: #fff;}
+
+
+		@media only screen and (max-width: 1000px) {
+			html,body{font-size: 16px;}
+			.flex-container{display: block;}
+			.mobile-hide{display: none;}
+			.column65, .column50{width: 100%;}
+			.column{padding: 5%;}
+			h1{font-size: 25px;}
+			h2{font-size: 22px;}
+			.blue-back p{font-size: 18px;}
+			.CTA{margin: 15px auto; width: 95%;}
+			.mobile-center{text-align: center;}
+			.desktop-hide{display: block;}
+			.mobileFont18{font-size: 18px; font-weight: 100;}
+			.mobileFont14{font-size: 14px;}
+			footer{padding: 8% 8% 2% !important;}
+		}
+	</style>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header>
+			<div class="row"></div>
+			<div class="container">
+				<div class="language-button">Español</div>
+				<img src="images/logo.png" alt="" width="120">
+				<div class="clear"></div>
+			</div>
+		</header>
+		<div class="wrapper">
+			<div class="row">
+				<div class="container">
+					<h1 class="blue-font center">Your AutoClean Mop Order Details</h1>
+					<h2 class="blue-font"><img src="images/icon_cart.png" alt="" class="icon-style"> Make Your Purchase</h2>
+					<div class="indent-div">
+						<div class="order-item">
+							<p class="bold font28 marbot40">One system for 2 payments of $24.95 + $14.95 S&amp;P</p>
+							<p class="bold font28 Fright">$39.90</p>
+							<img src="images/mop_bucket_cropped.jpg" alt=""> <p class="bold font28 inline-block">Autoclean Mop</p><div class="plus-minus-div"><span class="plus">+</span> <div class="number-box">1</div> <span class="minus">&ndash;</span></div>
+							<div class="clear"></div>
+							<hr>
+						</div>
+						<div class="order-item">
+							<p class="bold font28 marbot40">3-pack of microfiber pads for $19.95 + $4.95 S&amp;P</p>
+							<p class="bold font28 Fright">$24.90</p>
+							<img src="images/three_pads.jpg" alt=""> <p class="bold font28 inline-block">3-pack of microfiber pads</p><div class="plus-minus-div"><span class="plus">+</span> <div class="number-box">1</div> <span class="minus">&ndash;</span></div>
+							<div class="clear"></div>
+							<hr>
+						</div>
+						<div class="order-item">
+							<p class="bold font28 marbot40">RUSH, additional $9.95 S&amp;P</p>
+							<p class="bold font28 Fright">$9.95</p>
+							<div class="checkbox"><span class="checkmark">&#x2714;</span></div><p class="bold font28 inline-block">Rush my order (3 to 5 days shipping)</p>
+							<div class="clear"></div>
+							<hr>
+						</div>
+						<div class="order-item">
+							<div class="right-column">
+								<p class="right-text">$64.80</p>
+								<p class="left-text">Subtotal</p>
+								<div class="clear"></div>
+								<p class="right-text">$3.50</p>
+								<p class="left-text">Tax</p>
+								<div class="clear"></div>
+								<p class="right-text">$19.90</p>
+								<p class="left-text">Shipping &amp; Processing</p>
+								<div class="clear"></div>
+								<p class="right-text">$88.20</p>
+								<p class="left-text">Order Total</p>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+							<hr>
+						</div>
+						<div class="right-column">
+							<p class="right-text bold">$63.25</p>
+							<p class="left-text bold marbot30">Today's Payment</p>
+							<div class="clear"></div>
+							<p class="right-text bold">$24.95</p>
+							<p class="left-text bold">Second Payment Due in 30 days</p>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<h2 class="blue-font martop40"><img src="images/icon_email.png" alt="" class="icon-style"> Email</h2>
+					<div class="indent-div">
+						<p class="bold font28 marbot20">What's your email address? (Once entered your email will be used for transactional emails, including checkout help)</p>
+						<div class="Fleft">
+							<p class="font20 marbot15">Email Address <sup>*</sup></p>
+							<input type="text" class="input-field">
+						</div>
+						<div class="Fright width48per">
+							<div class="checkbox2"><span class="checkmark2">&#x2714;</span></div> <p class="inline">Also register email address with Starlyte AutoClean Mop.</p>
+							<p class="martop10">By agreeing to register your email address you may receive emails about: first access to new products, special VIP offers & discounts, product hints & tips, questionnaires and exclusive prize draws and competitions</p>
+						</div>
+						<div class="clear"></div>
+						<hr>
+					</div>
+					<h2 class="blue-font martop40"><img src="images/icon_delivery.png" alt="" class="icon-style"> Shipping</h2>
+					<div class="indent-div">
+						<p class="bold font28 marbot20">Where would you like to receive your order?</p>
+						<div class="Fleft">
+							<p class="font20 marbot15">First Name <sup>*</sup></p>
+							<input type="text" class="input-field">
+						</div>
+						<div class="Fright">
+							<p class="font20 marbot15">Last Name <sup>*</sup></p>
+							<input type="text" class="input-field">
+						</div>
+						<div class="clear marbot20"></div>
+						<div class="Fleft">
+							<p class="font20 marbot15">Street Address <sup>*</sup></p>
+							<input type="text" class="input-field">
+						</div>
+						<div class="Fright">
+							<p class="font20 marbot15">Address Two</p>
+							<input type="text" class="input-field">
+						</div>
+						<div class="clear marbot20"></div>
+						<div class="Fleft">
+							<p class="font20 marbot15">City <sup>*</sup></p>
+							<input type="text" class="input-field">
+						</div>
+						<div class="Fright">
+							<div class="Fleft">
+								<p class="font20 marbot15">State <sup>*</sup></p>
+								<input type="text" class="input-field medium-field">
+							</div>
+							<div class="Fright">
+								<p class="font20 marbot15">Postal Code <sup>*</sup></p>
+								<input type="text" class="input-field small-field">
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear marbot20"></div>
+						<div class="Fleft">
+							<p class="font20 marbot15">Phone Number <sup>*</sup></p>
+							<input type="text" class="input-field">
+						</div>
+						<div class="clear"></div>
+						<hr>
+						</div>
+						<h2 class="blue-font martop40 marbot40"><img src="images/icon_billing.png" alt="" class="icon-style"> Billing</h2>
+						<div class="indent-div">
+							<div class="checkbox2"><span class="checkmark2">&#x2714;</span></div> <p class="inline">Billing address same as shipping?</p><br>
+							<div class="circle-out"><div class="circle-in"></div></div><h2 class="inline-block">Pay by Credit Card</h2><br>
+							<div class="Fleft">
+								<p class="font20 marbot15">Credit Card Number <sup>*</sup></p>
+								<input type="text" class="input-field">
+							</div>
+							<div class="Fright">
+							<div class="Fleft">
+								<p class="font20 marbot15">Expiration Date <sup>*</sup></p>
+								<input type="text" class="input-field medium-field">
+							</div>
+							<div class="Fright">
+								<p class="font20 marbot15">Security Code <sup>*</sup></p>
+								<input type="text" class="input-field small-field">
+							</div>
+							<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+							<img src="images/norton.jpg" alt="" class="Fright martop30" width="200">
+							<div class="clear"></div>
+							<hr>
+						</div>
+						<div class="CTA Fright">Complete My Purchase</div>
+						<div class="clear"></div>
+					</div> <!--end of container -->
+				</div> <!--end of row -->
+			</div> <!--end of wrapper -->
+		<footer class="pad4">
+			<p class="bold marbot20 font20 mobileFont14"><a href="secureOrder.html">Order Now</a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a> | <a href="terms.html">Terms and Conditions</a></p>
+			<p class="bold marbot20 font20 mobileFont14">&copy;Copyright 2019 Starlyte AutoClean Mop LLC - All Rights Reserved</p>
+		</footer> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".language-button").click(function() {
+
+					function SpanishOn() {
+						$(".language-button").html("English");
+						$(".english-text").hide();
+						$(".spanish-text").show();
+					}
+
+					function SpanishOff() {
+						$(".language-button").html("Español");
+						$(".spanish-text").hide();
+						$(".english-text").show();
+					}
+
+					return (this.tog = !this.tog) ? SpanishOn() : SpanishOff();
+				})
+			})
+		</script>
+	</body>
+	</html>
