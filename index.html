@@ -4,17 +4,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" type="image/x-icon" href="images/logo.png" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<title>Autoclean Mop</title>
 <!-- 	<link rel="stylesheet" href="css/style.css">
  -->	<style>
-		*{text-decoration: none; margin: 0; padding: 0;}
+		*{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
 		html,body{margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; color: #fff; font-size: 18px; background: #fff;
 				  letter-spacing: .5px;}
 		img{border: none;}
 		li{list-style-type: none;}
-		div{display: block; margin: 0; padding: 0;}
+		div{display: block; margin: 0; padding: 0; box-sizing: border-box;}
 		u{text-decoration: underline;}
 		s{text-decoration: line-through;}
 		i{font-style: italic;}
@@ -34,24 +35,34 @@
 		.relative{position: relative;}
 		.hidden{display: none;}
 		.flex-container{display: flex;}
+		.space-between{justify-content: space-between;}
 		.LightBlueBack{background: #5FBFF9 !important; margin-top: 40px;}
+		.LightBlueColor{color: #5FBFF9;}
 		.marbot15{margin-bottom: 15px;}
+		.marbot20{margin-bottom: 20px !important;;}
 		.marbot30{margin-bottom: 30px;}
 		.martop30{margin-top: 30px;}
-		.blue-font{color: #294189;}
+		.marright5per{margin-right: 5%;}
+		.blue-font{color: #294189 !important;}
+		.black-font{color: #1B263B;}
+		.font20{font-size: 20px;}
 		.font26{font-size: 26px;}
+		.pad4{padding: 4%;}
+		.nomarg{margin: 0 !important;}
+		.desktop-hide{display: none;}
 		
-		header{padding: 10px 0; border-bottom: 1px solid #294189;}
+		header{padding: 10px; border-bottom: 1px solid #294189;}
 		.CTA{width: 237px; background-color: #294189; font-weight: bold; text-align: center; padding: 20px 0; font-size: 1.2em;}
 
 		.column{flex: 1; display: flex; justify-content: center; padding: 5% 0;}
 		.column50{width: 50%;}
 		.column65{width: 65%;}
 		.blue-back{background-color: #294189;}
-		.mop-back{background: url(images/hero_product_2.jpg) no-repeat; background-size: cover;}
+		.mop-back{background: url(images/hero_product.jpg) no-repeat; background-size: cover; position: relative;}
 		h1{font-size: 45px; margin-bottom: 20px;}
 		h2{font-size: 34px; margin-bottom: 20px;}
 		.blue-back p{font-size: 26px;}
+		#two-payments{position: absolute;}
 
 		#kids-wrapper{background: url(images/hero_children2.jpg) no-repeat; background-size: cover;}
 		.opacity-blue{background-color: rgba(60,145,230,0.75); padding: 4% 3%; box-sizing: border-box;}
@@ -59,6 +70,55 @@
 					font-weight: bold; padding-top: 4px; box-sizing: border-box;}
 		.text-div{float: right; margin-left: 15px; font-weight: bold; width: 90%;}
 		.points-div{display: flex; align-items: center; margin-bottom: 30px;}
+
+		.grey-back{background: #E9ECF3; padding: 4%;}
+		.desc-box{text-align: center; width: 220px;}
+		.desc-box p{font-weight: bold; font-size: 26px; color: #1B263B; margin-top: 20px;}
+
+		.quote-text{color: #253044; margin-top: 15px; margin-bottom: 25px;}
+		.testimonial-div{width: 270px; margin-right: 30px; position: relative;}
+		.quote-icon{margin-top: -40px;}
+		.testimonial-wrapper{float: right;}
+		.blue-number{border: 1px solid #294189; color: #294189;}
+		.blue-text{color: #1B263B; font-weight: 100; font-size: 16px; margin-left: 10px;}
+		#lower-map{width: 150px; height: 400px;}
+		.includes-div{padding-top: 100px; margin-right: 30px;}
+
+		footer{background: #1B263B; text-align: center;}
+
+		@media only screen and (max-width: 1300px) {
+			#left-mop{display: none;}
+			.testimonial-wrapper{float: none;}
+		}
+
+		@media only screen and (max-width: 1150px) {
+			#lower-map{display: none;}
+			.includes-div{padding-top: 50px; margin-right: 0px;}
+		}
+
+		@media only screen and (max-width: 960px) {
+			html,body{font-size: 16px;}
+
+			.flex-container{display: block;}
+			.mobile-hide{display: none;}
+			.column65, .column50{width: 100%;}
+			.column{padding: 5%;}
+			h1{font-size: 25px;}
+			h2{font-size: 22px;}
+			.blue-back p{font-size: 18px;}
+			.CTA{margin: 15px auto; width: 95%;}
+			.mobile-center{text-align: center;}
+			.mop-back{height: 345px;}
+			.opacity-blue{background-color: #3C91E6;}
+			.desc-box, .testimonial-div{width: auto;}
+			.desc-box p{margin: 10px 0 20px;}
+			.pad4, .grey-back{padding: 8% 0;}
+			.testimonial-div{margin: auto; text-align: center;}
+			.desktop-hide{display: block;}
+			.mobileFont18{font-size: 18px; font-weight: 100;}
+			.mobileFont14{font-size: 14px;}
+			footer{padding: 8% 8% 2% !important;}
+		}
 	</style>
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -68,7 +128,7 @@
 		<header>
 			<div class="row"></div>
 			<div class="container">
-				<a href="secureOrder.html"><div class="CTA Fright">Order Today</div></a>
+				<a href="secureOrder.html"><div class="CTA Fright mobile-hide">Order Today</div></a>
 				<img src="images/logo.png" alt="" width="120">
 				<div class="clear"></div>
 			</div>
@@ -77,19 +137,21 @@
 			<div class="column blue-back">
 				<div class="column65">
 				<h1>The Next Generation in Home Cleaning</h1>
-				<h2>The Amazing Self-Cleaning &amp; Self-Drying Mop & Bucket System</h2>
+				<h2>The Amazing Self-Cleaning &amp; Self-Drying Mop &amp; Bucket System</h2>
 				<p>30-Day Money Back Guarantee</p>
 				<a href="secureOrder.html"><div class="CTA LightBlueBack marbot15">Order Today</div></a>
-				<img src="images/visa-mc.png" alt="" style="background: #fff; padding: 5px;">
+				<div class="mobile-center">
+					<img src="images/creditcards.png" alt="">
+				</div>
 				</div>
 			</div>
-			<div class="column mop-back"></div>
+			<div class="column mop-back"><img src="images/two-payments.png" alt="" id="two-payments"></div>
 		</div>
 		<div class="wrapper flex-container">
 			<div class="column">
 				<div class="column65">
 				<h2 class="blue-font">Watch The Magic In Front Of Your Own Eyes</h2>
-				<p class="blue-font">The Secret is… the dual chamber bucket that washes your mop on one side and squeezes dry on the other. Avoid touching dirty cloths and dripping mucky water over your clean floors</p>
+				<p class="blue-font"><b>The Secret is...</b> the dual chamber bucket that washes your mop on one side and squeezes it dry on the other. Avoid touching dirty cloths and dripping mucky water over your clean floors.</p>
 				<a href="secureOrder.html"><div class="CTA LightBlueBack marbot15">Order Today</div></a>
 				</div>
 			</div>
@@ -109,7 +171,7 @@
 					</div>
 					<div class="points-div">
 						<div class="number-div">2</div>
-						<div class="text-div">The Dual Chamber - one side washes your mop and the other dries it</div>
+						<div class="text-div">The convenient Dual Chamber - one side washes your mop and the other dries it</div>
 						<div class="clear"></div>
 					</div>
 					<div class="points-div">
@@ -137,13 +199,149 @@
 			</div>
 			<div class="clear"></div>
 		</div>
-		<div class="wrapper">
-			
-		</div>
-		<footer>
-			<div class="container">
-				
+		<div class="wrapper grey-back center">
+			<div class="row">
+				<div class="container">
+					<h2 class="blue-font marbot30">Perfect for Any Surface</h2>
+					<div class="flex-container space-between">
+						<div class="desc-box">
+							<img src="images/hardwood.jpg" alt="">
+							<p>Hardwood</p>
+						</div>
+						<div class="desc-box">
+							<img src="images/laminate.jpg" alt="">
+							<p>Laminate</p>
+						</div>
+						<div class="desc-box">
+							<img src="images/marble.jpg" alt="">
+							<p>Marble</p>
+						</div>
+						<div class="desc-box">
+							<img src="images/cermaic.jpg" alt="">
+							<p>Ceramic Tile &amp; <br> More</p>
+						</div>
+						<div class="desc-box">
+							<img src="images/windows.jpg" alt="">
+							<p>Windows &amp; <br> Mirrors</p>
+						</div>
+					</div>
+				</div>
 			</div>
+		</div>
+		<div class="wrapper pad4">
+			<div class="row">
+				<div class="container">
+					<div class="testimonial-wrapper">
+						<h2 class="LightBlueColor marbot30 mobile-center">Everyone Loves the Autoclean Mop!</h2>
+						<div class="flex-container space-between">
+						<div class="Fleft testimonial-div">
+							<img src="images/testimonial_1.jpg" alt="">
+							<div class="center">
+								<img src="images/icon_quote.png" alt="" class="quote-icon">
+							</div>
+							<p class="quote-text">"What I like about the Autoclean mop is that it solves all the problems I've had with other mops. It's Easy to use, keeps my hands clean and dry, keeps the floor clean and dry and it's easy one-two step."</p>
+							<div class="center">
+								<img src="images/stars.png" alt="">
+							</div>
+						</div>
+						<div class="Fleft testimonial-div mobile-hide">
+							<img src="images/testimonial_2.jpg" alt="">
+							<div class="center">
+								<img src="images/icon_quote.png" alt="" class="quote-icon">
+							</div>
+							<p class="quote-text">"This is so easy and the floors are sparkling clean."</p>
+							<div class="center">
+								<img src="images/stars.png" alt="">
+							</div>
+						</div>
+						<div class="Fleft testimonial-div nomarg mobile-hide">
+							<img src="images/testimonial_3.jpg" alt="">
+							<div class="center">
+								<img src="images/icon_quote.png" alt="" class="quote-icon">
+							</div>
+							<p class="quote-text">"With this mop I can wash it. I can dry it and I know my floors are clean and dry."</p>
+							<div class="center">
+								<img src="images/stars.png" alt="">
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+					<img src="images/mop-bucket_white-bkgd.png" alt="" id="left-mop">
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper grey-back">
+			<div class="row">
+			<div class="container">
+			<div class="Fleft column50">
+				<h1 class="blue-font">The Amazing Self Cleaning &amp; Self Drying Mop &amp; Bucket System</h1>
+				<div class="includes-div desktop-hide">
+					<p class="bold font20 black-font marbot30">The AutoClean Mop includes:</p>
+					<div class="points-container">
+						<div class="points-div marbot20">
+							<div class="number-div blue-number">&#x2714;</div>
+							<div class="text-div blue-text">Self-cleaning Bucket</div>
+							<div class="clear"></div>
+						</div>
+						<div class="points-div marbot20">
+							<div class="number-div blue-number">&#x2714;</div>
+							<div class="text-div blue-text">Stainless Steel Handle &amp; Head</div>
+							<div class="clear"></div>
+						</div>
+						<div class="points-div marbot20">
+							<div class="number-div blue-number">&#x2714;</div>
+							<div class="text-div blue-text">Microfiber Pad</div>
+							<div class="clear"></div>
+						</div>
+						<div class="points-div marbot20">
+							<div class="number-div blue-number">&#x2714;</div>
+							<div class="text-div blue-text">Instruction Manual</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<p class="font26 blue-font bold mobileFont18">30-Day Money Back Guarantee</p>
+				<a href="secureOrder.html"><div class="CTA LightBlueBack marbot15">Order Today</div></a>
+				<img src="images/creditcards.png" alt="">
+			</div>
+			<div class="Fright mobile-hide">
+				<div class="includes-div Fleft">
+					<p class="bold font20 black-font marbot30">The AutoClean Mop includes:</p>
+					<div class="points-container">
+						<div class="points-div marbot20">
+							<div class="number-div blue-number">&#x2714;</div>
+							<div class="text-div blue-text">Self-cleaning Bucket</div>
+							<div class="clear"></div>
+						</div>
+						<div class="points-div marbot20">
+							<div class="number-div blue-number">&#x2714;</div>
+							<div class="text-div blue-text">Stainless Steel Handle &amp; Head</div>
+							<div class="clear"></div>
+						</div>
+						<div class="points-div marbot20">
+							<div class="number-div blue-number">&#x2714;</div>
+							<div class="text-div blue-text">Microfiber Pad</div>
+							<div class="clear"></div>
+						</div>
+						<div class="points-div marbot20">
+							<div class="number-div blue-number">&#x2714;</div>
+							<div class="text-div blue-text">Instruction Manual</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<img src="images/mop-bucket_no-bkgd.png" alt="" id="lower-map" class="Fleft">
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+		</div>
+		<footer class="pad4">
+			<p class="bold marbot20 font20 mobileFont14"><a href="secureOrder.html">Order Now</a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a> | <a href="terms.html">Terms and Conditions</a></p>
+			<p class="bold marbot20 font20 mobileFont14">&copy;Copyright 2019 Starlyte AutoClean Mop LLC - All Rights Reserved</p>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</body>
