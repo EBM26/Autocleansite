@@ -69,7 +69,7 @@
 		.indent-div hr{border: 0; border-top: 1px solid #294189; margin-top: 30px;}
 		.order-item{margin-bottom: 50px; position: relative;}
 		.order-item img{vertical-align: top; margin-right: 30px;}
-		.plus-minus-div{font-weight: bold; font-size: 26px; position: absolute; top: 25%; left: 60%;}
+		.plus-minus-div{font-weight: bold; font-size: 26px; margin-right: 285px;}
 		.number-box{display: inline-block; border: 1px solid; padding: 0px 15px; margin: 0 10px;}
 		.plus, .minus{font-weight: bold; font-size: 30px; cursor: pointer;}
 		.checkbox{display: inline-block; width: 40px; height: 40px; border: 1px solid #294189; vertical-align: -10px; 
@@ -101,19 +101,23 @@
 
 		@media only screen and (max-width: 1000px) {
 			html,body{font-size: 16px;}
+			.row{padding: 0 20px;}
 			.flex-container{display: block;}
 			.mobile-hide{display: none;}
 			.column65, .column50{width: 100%;}
 			.column{padding: 5%;}
 			h1{font-size: 25px;}
-			h2{font-size: 22px;}
+			h2{font-size: 20px;}
+			.Fright, .Fleft{float: none;}
 			.blue-back p{font-size: 18px;}
 			.CTA{margin: 15px auto; width: 95%;}
 			.mobile-center{text-align: center;}
 			.desktop-hide{display: block;}
 			.mobileFont18{font-size: 18px; font-weight: 100;}
 			.mobileFont14{font-size: 14px;}
+			.icon-style{width: 45px; margin-right: 5px;}
 			footer{padding: 8% 8% 2% !important;}
+			.font28{font-size: 19px;}
 		}
 	</style>
 		<!--[if lt IE 9]>
@@ -137,22 +141,34 @@
 					<div class="indent-div">
 						<div class="order-item">
 							<p class="bold font28 marbot40">One system for 2 payments of $24.95 + $14.95 S&amp;P</p>
-							<p class="bold font28 Fright">$39.90</p>
-							<img src="images/mop_bucket_cropped.jpg" alt=""> <p class="bold font28 inline-block">Autoclean Mop</p><div class="plus-minus-div"><span class="plus">+</span> <div class="number-box">1</div> <span class="minus">&ndash;</span></div>
+							<div class="Fleft">
+								<p class="bold font28 Fright">Autoclean Mop</p> 
+								<img src="images/mop_bucket_cropped.jpg" alt="" class="Fright"> 
+							</div>
+							<div class="Fright">
+								<div class="plus-minus-div Fleft"><span class="plus">+</span> <div class="number-box">1</div> <span class="minus">&ndash;</span></div>
+								<p class="bold font28 Fright">$39.90</p>
+							</div>
 							<div class="clear"></div>
 							<hr>
 						</div>
 						<div class="order-item">
 							<p class="bold font28 marbot40">3-pack of microfiber pads for $19.95 + $4.95 S&amp;P</p>
-							<p class="bold font28 Fright">$24.90</p>
-							<img src="images/three_pads.jpg" alt=""> <p class="bold font28 inline-block">3-pack of microfiber pads</p><div class="plus-minus-div"><span class="plus">+</span> <div class="number-box">1</div> <span class="minus">&ndash;</span></div>
+							<div class="Fleft">
+								<p class="bold font28 Fright">3-pack of microfiber pads</p>
+								<img src="images/three_pads.jpg" alt="" class="Fright"> 
+							</div>
+							<div class="Fright">
+								<div class="plus-minus-div Fleft"><span class="plus">+</span> <div class="number-box">1</div> <span class="minus">&ndash;</span></div>
+								<p class="bold font28 Fright">$24.90</p>
+							</div>
 							<div class="clear"></div>
 							<hr>
 						</div>
 						<div class="order-item">
 							<p class="bold font28 marbot40">RUSH, additional $9.95 S&amp;P</p>
+							<div class="checkbox"><span class="checkmark">&#x2714;</span></div><p class="bold font28 inline">Rush my order (3 to 5 days shipping)</p>
 							<p class="bold font28 Fright">$9.95</p>
-							<div class="checkbox"><span class="checkmark">&#x2714;</span></div><p class="bold font28 inline-block">Rush my order (3 to 5 days shipping)</p>
 							<div class="clear"></div>
 							<hr>
 						</div>
