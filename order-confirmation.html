@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" type="image/x-icon" href="images/logo.png" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<title>Autoclean Mop | Order Confirmation Page</title>
+<!-- 	<link rel="stylesheet" href="css/style.css">
+ -->	<style>
+		*{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
+		html,body{margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; color: #1B263B; font-size: 18px;
+				  background: #E9ECF3; letter-spacing: .5px;}
+		img{border: none;}
+		li{list-style-type: none;}
+		div{display: block; margin: 0; padding: 0; box-sizing: border-box;}
+		u{text-decoration: underline;}
+		s{text-decoration: line-through;}
+		i{font-style: italic;}
+		b, .bold{font-weight: bold;}
+		a:link, a:visited, a:active{text-decoration: none; color: inherit;}
+		.Fright{float: right;}
+		.Fleft{float: left;}
+		.clear{clear: both;}
+		.wrapper{width: 100%; padding: 5% 0;}
+		.container{max-width: 1200px; margin: auto; width: 100%;}
+		.row{padding: 0 30px;}
+		.align-left{text-align: left;}
+		.inline{display: inline;}
+		.inline-block{display: inline-block;}
+		.uppercase{text-transform: uppercase;}
+		.center{text-align: center;}
+		.relative{position: relative;}
+		.hidden{display: none;}
+		.flex-container{display: flex;}
+		.space-between{justify-content: space-between;}
+		.LightBlueBack{background: #5FBFF9 !important; margin-top: 40px; border: 2px solid #5FBFF9 !important;}
+		.LightBlueColor{color: #5FBFF9;}
+		.marbot15{margin-bottom: 15px;}
+		.marbot20{margin-bottom: 20px !important;;}
+		.marbot30{margin-bottom: 30px;}
+		.marbot40{margin-bottom: 40px;}
+		.martop10{margin-top: 10px;}
+		.martop30{margin-top: 30px;}
+		.martop40{margin-top: 40px;}
+		.marright5per{margin-right: 5%;}
+		.blue-font{color: #294189 !important;}
+		.black-font{color: #1B263B;}
+		.font20{font-size: 20px;}
+		.font24{font-size: 24px;}
+		.font26{font-size: 26px;}
+		.font28{font-size: 28px;}
+		.pad4{padding: 4%;}
+		.nomarg{margin: 0 !important;}
+		.desktop-hide{display: none;}
+		sup{font-size: 12px;}
+		
+		header{padding: 10px; position: relative; background: #fff;}
+		.CTA{width: 335px; background-color: #294189; font-weight: bold; text-align: center; padding: 18px 0; font-size: 1.2em;
+			 border: 2px solid #294189; color: #fff; margin-top: 40px;}
+		.CTA:hover{background-color: #fff; color: #294189; }
+		.language-button{width: 130px; border: 2px solid #294189; text-align: center; cursor: pointer; font-size: 22px;
+						 font-weight: bold; color: #294189; padding: 10px 0; float: right; margin-top: 10px;}
+		.language-button:hover {color: #fff; background: #294189;}
+		.LightBlueBack:hover{color: #5FBFF9; background: #fff !important;}
+		
+		.summary-div{background: #fff; max-width: 800px; margin: 60px auto; border: 1px solid #294189;}
+		.summary-div hr{border: 0; border-top: 1px solid #294189; margin-top: 30px;}
+		.order-item{margin-bottom: 30px; position: relative;}
+		.order-item img{vertical-align: top; margin-right: 30px; max-width: 170px;}
+		.right-column{float: right; font-size: 24px; text-align: right;}
+		.right-text{margin-left: 130px; float: right; display: inline-block; margin-bottom: 10px; width: 80px;}
+		.left-text{display: inline-block;}
+		.price-text{font-size: 24px; float: right;}
+		.summary-title{font-weight: bold; font-size: 28px; text-align: center; padding: 30px 0; color: #294189;}
+		.summary-bottom{padding: 30px}
+
+		h1{font-size: 45px; margin-bottom: 40px;}
+		h2{font-size: 30px; margin-bottom: 20px;}
+		
+
+		footer{background: #1B263B; text-align: center; color: #fff;}
+
+
+		@media only screen and (max-width: 1000px) {
+			html,body{font-size: 16px;}
+			.row{padding: 0 20px;}
+			.flex-container{display: block;}
+			.mobile-hide{display: none;}
+			.column65, .column50{width: 100%;}
+			.column{padding: 5%;}
+			h1{font-size: 25px; margin-bottom: 30px;}
+			h2, .summary-title, .font24{font-size: 20px;}
+			.Fright, .Fleft{float: none;}
+			.blue-back p{font-size: 18px;}
+			.CTA{margin: 15px auto; width: 95%;}
+			.mobile-center{text-align: center;}
+			.desktop-hide{display: block;}
+			.mobileFont18{font-size: 18px; font-weight: 100;}
+			.mobileFont14{font-size: 14px;}
+			.icon-style{width: 45px; margin-right: 5px;}
+			footer{padding: 8% 8% 2% !important;}
+			.font28, .price-text{font-size: 19px;}
+			.marbot40{margin-bottom: 20px;}
+			.mobileMarbot20{margin-bottom: 20px;}
+			.mobileMartop20{margin-top: 20px;}
+			.price-text{padding-top: 10px; float: none; text-align: center; font-size: 20px;}
+			.order-item{margin-bottom: 30px;}
+			.summary-div{margin: 40px auto;}
+			.summary-title{padding: 15px 0;}
+			.summary-title hr{margin-top: 15px;}
+			.summary-bottom{padding: 15px}
+			.order-item img{max-width: 100%;}
+		}
+	</style>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header>
+			<div class="row"></div>
+			<div class="container">
+				<div class="language-button">Español</div>
+				<img src="images/logo.png" alt="" width="120">
+				<div class="clear"></div>
+			</div>
+		</header>
+		<div class="wrapper">
+			<div class="row">
+				<div class="container">
+					<div class="center marbot40">
+						<img src="images/icon_check.png" alt="">
+					</div>
+					<h1 class="blue-font center">Thank you.</h1>
+					<h2 class="blue-font center">Your order was completed successfully.</h2>
+					<p class="font28 center">An email providing the details of your order has been sent to you.</p>
+					<div class="summary-div">
+						<div class="summary-title">
+							Order Summary
+							<hr>
+						</div>
+						<div class="summary-bottom">
+						<div class="order-item">
+							<p class="bold font24 marbot20">One system for 2 payments of $24.95 + $14.95 S&P</p>
+							<div class="Fleft">
+								<img src="images/mop_bucket_cropped2.jpg" alt="" class="Fright"> 
+							</div>
+							<div class="Fright mobileMartop20">
+								<p class="price-text">$24.95 + $14.95 E&P</p>
+							</div>
+							<div class="clear"></div>
+							<hr>
+						</div>
+						<div class="order-item">
+							<p class="bold font24 marbot20">3-pack of microfiber pads for $19.95 + $4.95 S&amp;P</p>
+							<div class="Fleft">
+								<img src="images/three_pads2.jpg" alt="" class="Fright"> 
+							</div>
+							<div class="Fright mobileMartop20">
+								<p class="price-text">$19.95 + $4.95 S&P</p>
+							</div>
+							<div class="clear"></div>
+							<hr>
+						</div>
+						<div class="order-item">
+							<div class="right-column">
+								<p class="right-text">$64.80</p>
+								<p class="left-text">Subtotal</p>
+								<div class="clear"></div>
+								<p class="right-text">$3.50</p>
+								<p class="left-text">Tax</p>
+								<div class="clear"></div>
+								<p class="right-text">$19.90</p>
+								<p class="left-text">Shipping &amp; Processing</p>
+								<div class="clear"></div>
+								<p class="right-text">$88.20</p>
+								<p class="left-text">Order Total</p>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+							<hr>
+						</div>
+						<div class="right-column">
+							<p class="right-text bold">$63.25</p>
+							<p class="left-text bold">Paid</p>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+						</div>
+					</div>
+					</div> <!--end of container -->
+				</div> <!--end of row -->
+			</div> <!--end of wrapper -->
+		<footer class="pad4">
+			<p class="bold marbot20 font20 mobileFont14"><a href="secureOrder.html">Order Now</a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a> | <a href="terms.html">Terms and Conditions</a></p>
+			<p class="bold marbot20 font20 mobileFont14">&copy;Copyright 2019 Starlyte AutoClean Mop LLC - All Rights Reserved</p>
+		</footer> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".language-button").click(function() {
+
+					function SpanishOn() {
+						$(".language-button").html("English");
+						$(".english-text").hide();
+						$(".spanish-text").show();
+					}
+
+					function SpanishOff() {
+						$(".language-button").html("Español");
+						$(".spanish-text").hide();
+						$(".english-text").show();
+					}
+
+					return (this.tog = !this.tog) ? SpanishOn() : SpanishOff();
+				})
+			})
+		</script>
+	</body>
+	</html>
