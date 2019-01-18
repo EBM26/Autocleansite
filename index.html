@@ -8,124 +8,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<title>Autoclean Mop | Home Page</title>
-<!-- 	<link rel="stylesheet" href="css/style.css">
- -->	<style>
-		*{text-decoration: none; margin: 0; padding: 0; max-width: 100%;}
-		html,body{margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; color: #fff; font-size: 18px; background: #fff;
-				  letter-spacing: .5px;}
-		img{border: none;}
-		li{list-style-type: none;}
-		div{display: block; margin: 0; padding: 0; box-sizing: border-box;}
-		u{text-decoration: underline;}
-		s{text-decoration: line-through;}
-		i{font-style: italic;}
-		b, .bold{font-weight: bold;}
-		a:link, a:visited, a:active{text-decoration: none; color: inherit;}
-		.Fright{float: right;}
-		.Fleft{float: left;}
-		.clear{clear: both;}
-		.wrapper{width: 100%;}
-		.container{max-width: 1200px; margin: auto; width: 100%;}
-		.row{padding: 0 30px;}
-		.align-left{text-align: left;}
-		.inline{display: inline;}
-		.inline-block{display: inline-block;}
-		.uppercase{text-transform: uppercase;}
-		.center{text-align: center;}
-		.relative{position: relative;}
-		.hidden{display: none;}
-		.flex-container{display: flex;}
-		.space-between{justify-content: space-between;}
-		.LightBlueBack{background: #5FBFF9 !important; margin-top: 40px; border: 2px solid #5FBFF9 !important;}
-		.LightBlueColor{color: #5FBFF9;}
-		.marbot15{margin-bottom: 15px;}
-		.marbot20{margin-bottom: 20px !important;;}
-		.marbot30{margin-bottom: 30px;}
-		.martop30{margin-top: 30px;}
-		.marright5per{margin-right: 5%;}
-		.blue-font{color: #294189 !important;}
-		.black-font{color: #1B263B;}
-		.font20{font-size: 20px;}
-		.font26{font-size: 26px;}
-		.pad4{padding: 4%;}
-		.nomarg{margin: 0 !important;}
-		.desktop-hide, .spanish-text{display: none;}
-		
-		header{padding: 10px; position: relative;}
-		.CTA{width: 237px; background-color: #294189; font-weight: bold; text-align: center; padding: 18px 0; font-size: 1.2em;
-			 border: 2px solid #294189;}
-		.CTA:hover{background-color: #fff; color: #294189; }
-		.language-button{width: 130px; border: 2px solid #294189; text-align: center; cursor: pointer; font-size: 22px;
-						 font-weight: bold; color: #294189; padding: 10px 0; position: absolute; left: 47%; top: 20%;}
-		.language-button:hover {color: #fff; background: #294189;}
-		.LightBlueBack:hover{color: #5FBFF9; background: #fff !important;}
-
-		.column{flex: 1; display: flex; justify-content: center; padding: 5% 0;}
-		.column50{width: 50%;}
-		.column65{width: 65%;}
-		.blue-back{background-color: #294189;}
-		.mop-back{background: url(images/hero_product.jpg) no-repeat; background-size: cover; position: relative;}
-		h1{font-size: 45px; margin-bottom: 20px;}
-		h2{font-size: 34px; margin-bottom: 20px;}
-		.blue-back p{font-size: 26px;}
-		#two-payments{position: absolute;}
-
-		#kids-wrapper{background: url(images/hero_children2.jpg) no-repeat; background-size: cover;}
-		.opacity-blue{background-color: rgba(60,145,230,0.75); padding: 4% 3%; box-sizing: border-box;}
-		.number-div{float: left; border: 1px solid #fff; border-radius: 50%; width: 34px; height: 34px; text-align: center;
-					font-weight: bold; padding-top: 4px; box-sizing: border-box;}
-		.text-div{float: right; margin-left: 15px; font-weight: bold; width: 90%;}
-		.points-div{display: flex; align-items: center; margin-bottom: 30px;}
-
-		.grey-back{background: #E9ECF3; padding: 4%;}
-		.desc-box{text-align: center; width: 220px;}
-		.desc-box p{font-weight: bold; font-size: 26px; color: #1B263B; margin-top: 20px;}
-
-		.quote-text{color: #253044; margin-top: 15px; margin-bottom: 25px;}
-		.testimonial-div{width: 270px; margin-right: 30px; position: relative;}
-		.quote-icon{margin-top: -40px;}
-		.testimonial-wrapper{float: right;}
-		.blue-number{border: 1px solid #294189; color: #294189;}
-		.blue-text{color: #1B263B; font-weight: 100; font-size: 16px; margin-left: 10px;}
-		#lower-map{width: 150px; height: 400px;}
-		.includes-div{padding-top: 100px; margin-right: 30px;}
-
-		footer{background: #1B263B; text-align: center;}
-
-		@media only screen and (max-width: 1300px) {
-			#left-mop{display: none;}
-			.testimonial-wrapper{float: none;}
-		}
-
-		@media only screen and (max-width: 1150px) {
-			#lower-map{display: none;}
-			.includes-div{padding-top: 50px; margin-right: 0px;}
-		}
-
-		@media only screen and (max-width: 960px) {
-			html,body{font-size: 16px;}
-			.language-button{position: initial; float: right; margin-top: 10px;}
-			.flex-container{display: block;}
-			.mobile-hide{display: none;}
-			.column65, .column50{width: 100%;}
-			.column{padding: 5%;}
-			h1{font-size: 25px;}
-			h2{font-size: 22px;}
-			.blue-back p{font-size: 18px;}
-			.CTA{margin: 15px auto; width: 95%;}
-			.mobile-center{text-align: center;}
-			.mop-back{height: 345px;}
-			.opacity-blue{background-color: #3C91E6;}
-			.desc-box, .testimonial-div{width: auto;}
-			.desc-box p{margin: 10px 0 20px;}
-			.pad4, .grey-back{padding: 8% 0;}
-			.testimonial-div{margin: auto; text-align: center;}
-			.desktop-hide{display: block;}
-			.mobileFont18{font-size: 18px; font-weight: 100;}
-			.mobileFont14{font-size: 14px;}
-			footer{padding: 8% 8% 2% !important;}
-		}
-	</style>
+	<link rel="stylesheet" href="css/homepage.css">
+	
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -134,7 +18,7 @@
 		<header>
 			<div class="row"></div>
 			<div class="container">
-				<a href="secureOrder.html"><div class="CTA Fright mobile-hide">Order Today</div></a>
+				<a href="secureOrder.html"><div class="CTA Fright mobile-hide"><span class="english-text">Order Today</span><span class="spanish-text">¡Ordene Hoy!</span></div></a>
 				<div class="language-button">Español</div>
 				<img src="images/logo.png" alt="" width="120">
 				<div class="clear"></div>
@@ -143,23 +27,23 @@
 		<div class="wrapper flex-container">
 			<div class="column blue-back">
 				<div class="column65">
-				<h1>The Next Generation in Home Cleaning</h1>
-				<h2>The Amazing Self-Cleaning &amp; Self-Drying Mop &amp; Bucket System</h2>
-				<p>30-Day Money Back Guarantee</p>
-				<a href="secureOrder.html"><div class="CTA LightBlueBack marbot15">Order Today</div></a>
+				<h1><span class="english-text">The Next Generation in Home Cleaning</span><span class="spanish-text">La Próxima Generación En La Limpieza Del Hogar</span></h1>
+				<h2><span class="english-text">The Amazing Self-Cleaning &amp; Self-Drying Mop &amp; Bucket System</span><span class="spanish-text">El Increíble Sistema de Trapeador Con Balde de Limpieza Y Secado Automático</span></h2>
+				<p><span class="english-text">30-Day Money Back Guarantee</span><span class="spanish-text">Garantía de Devolución del Dinero de 30 Días</span></p>
+				<a href="secureOrder.html"><div class="CTA LightBlueBack marbot15"><span class="english-text">Order Today</span><span class="spanish-text">¡Ordene Hoy!</span></div></a>
 				<div class="mobile-center">
 					<img src="images/creditcards.png" alt="">
 				</div>
 				</div>
 			</div>
-			<div class="column mop-back"><img src="images/two-payments.png" alt="" id="two-payments"></div>
+			<div class="column mop-back"><img src="images/two-payments.png" alt="" class="two-payments english-text"><img src="images/bubble_spanish.png" alt="" class="two-payments spanish-text"></div>
 		</div>
 		<div class="wrapper flex-container">
 			<div class="column">
 				<div class="column65">
-				<h2 class="blue-font">Watch The Magic In Front Of Your Own Eyes</h2>
-				<p class="blue-font"><b>The Secret is...</b> the dual chamber bucket that washes your mop on one side and squeezes it dry on the other. Avoid touching dirty cloths and dripping mucky water over your clean floors.</p>
-				<a href="secureOrder.html"><div class="CTA LightBlueBack marbot15">Order Today</div></a>
+				<h2 class="blue-font"><span class="english-text">Watch The Magic In Front Of Your Own Eyes</span><span class="spanish-text">Vea con Sus Propios Ojos Cómo Hace Su Magia.</span></h2>
+				<p class="blue-font"><span class="english-text"><b>The Secret is...</b> the dual chamber bucket that washes your mop on one side and squeezes it dry on the other. Avoid touching dirty cloths and dripping mucky water over your clean floors.</span><span class="spanish-text"><b>El secreto es...</b> el balde de doble cámara que lava el trapeador por un lado y lo exprime por el otro. Evite tocar los trapos sucios y que caiga goteando el agua mugrienta en sus pisos limpios.</span></p>
+				<a href="secureOrder.html"><div class="CTA LightBlueBack marbot15"><span class="english-text">Order Today</span><span class="spanish-text">¡Ordene Hoy!</span></div></a>
 				</div>
 			</div>
 			<div class="column">
@@ -168,68 +52,68 @@
 		</div>
 		<div class="wrapper" id="kids-wrapper">
 			<div class="Fright column50 opacity-blue">
-				<h2 class="marbot30">The AutoClean Mop</h2>
-				<p class="font26 bold marbot30">Features &amp; Benefits</p>
+				<h2 class="marbot30"><span class="english-text">The AutoClean Mop</span><span class="spanish-text">El trapeador Autoclean Mop</span></h2>
+				<p class="font26 bold marbot30"><span class="english-text">Features &amp; Benefits</span><span class="spanish-text">Características Y Beneficios</span></p>
 				<div class="points-container">
 					<div class="points-div">
 						<div class="number-div">1</div>
-						<div class="text-div">Innovative Microfiber Mop Head is gentle on all types of surfaces</div>
+						<div class="text-div"><span class="english-text">Innovative Microfiber Mop Head is gentle on all types of surfaces</span><span class="spanish-text">Cabeza del trapeador innovadora de microfibra que es suave en todo tipo de superficies</span></div>
 						<div class="clear"></div>
 					</div>
 					<div class="points-div">
 						<div class="number-div">2</div>
-						<div class="text-div">The convenient Dual Chamber - one side washes your mop and the other dries it</div>
+						<div class="text-div"><span class="english-text">The convenient Dual Chamber - one side washes your mop and the other dries it</span><span class="spanish-text">La doble cámara – un lado limpia su trapeador y el otro lo seca</span></div>
 						<div class="clear"></div>
 					</div>
 					<div class="points-div">
 						<div class="number-div">3</div>
-						<div class="text-div">360 Degree Swivel Action for easy maneuverability</div>
+						<div class="text-div"><span class="english-text">360 Degree Swivel Action for easy maneuverability</span><span class="spanish-text">Acción de rotación en 360 grados para fácil manejo</span></div>
 						<div class="clear"></div>
 					</div>
 					<div class="points-div">
 						<div class="number-div">4</div>
-						<div class="text-div">Low Profile Design gets under just about anything</div>
+						<div class="text-div"><span class="english-text">Low Profile Design gets under just about anything</span><span class="spanish-text">Diseño de bajo perfil que cabe debajo de casi todo</span></div>
 						<div class="clear"></div>
 					</div>
 					<div class="points-div">
 						<div class="number-div">5</div>
-						<div class="text-div">Dry and Polish at the same time</div>
+						<div class="text-div"><span class="english-text">Dry and Polish at the same time</span><span class="spanish-text">Seca y lustra al mismo tiempo</span></div>
 						<div class="clear"></div>
 					</div>
 					<div class="points-div">
 						<div class="number-div">6</div>
-						<div class="text-div">Lightweight &amp; Portable</div>
+						<div class="text-div"><span class="english-text">Lightweight &amp; Portable</span><span class="spanish-text">Liviano y portátil</span></div>
 						<div class="clear"></div>
 					</div>	
 				</div>
-				<a href="secureOrder.html"><div class="CTA martop30">Order Today</div></a>
+				<a href="secureOrder.html"><div class="CTA martop30"><span class="english-text">Order Today</span><span class="spanish-text">¡Ordene Hoy!</span></div></a>
 			</div>
 			<div class="clear"></div>
 		</div>
 		<div class="wrapper grey-back center">
 			<div class="row">
 				<div class="container">
-					<h2 class="blue-font marbot30">Perfect for Any Surface</h2>
+					<h2 class="blue-font marbot30"><span class="english-text">Perfect for Any Surface</span><span class="spanish-text">¡Perfecto Para Cualquier Superficie Sólida!</span></h2>
 					<div class="flex-container space-between">
 						<div class="desc-box">
 							<img src="images/hardwood.jpg" alt="">
-							<p>Hardwood</p>
+							<p><span class="english-text">Hardwood</span><span class="spanish-text">Madera</span></p>
 						</div>
 						<div class="desc-box">
 							<img src="images/laminate.jpg" alt="">
-							<p>Laminate</p>
+							<p><span class="english-text">Laminate</span><span class="spanish-text">Laminados</span></p>
 						</div>
 						<div class="desc-box">
 							<img src="images/marble.jpg" alt="">
-							<p>Marble</p>
+							<p><span class="english-text">Marble</span><span class="spanish-text">Mármol</span></p>
 						</div>
 						<div class="desc-box">
 							<img src="images/cermaic.jpg" alt="">
-							<p>Ceramic Tile &amp; <br> More</p>
+							<p><span class="english-text">Ceramic Tile &amp; <br> More</span><span class="spanish-text">Azulejos de Cerámica Y Más</span></p>
 						</div>
 						<div class="desc-box">
 							<img src="images/windows.jpg" alt="">
-							<p>Windows &amp; <br> Mirrors</p>
+							<p><span class="english-text">Windows &amp; <br> Mirrors</span><span class="spanish-text">Ventanas Y<br> Espejos</span></p>
 						</div>
 					</div>
 				</div>
@@ -239,14 +123,14 @@
 			<div class="row">
 				<div class="container">
 					<div class="testimonial-wrapper">
-						<h2 class="LightBlueColor marbot30 mobile-center">Everyone Loves the Autoclean Mop!</h2>
+						<h2 class="LightBlueColor marbot30 mobile-center"><span class="english-text">Everyone Loves the Autoclean Mop!</span><span class="spanish-text">¡A Todos Les Encanta El Autoclean Mop!</span></h2>
 						<div class="flex-container space-between">
 						<div class="Fleft testimonial-div">
 							<img src="images/testimonial_1.jpg" alt="">
 							<div class="center">
 								<img src="images/icon_quote.png" alt="" class="quote-icon">
 							</div>
-							<p class="quote-text">"What I like about the Autoclean mop is that it solves all the problems I've had with other mops. It's Easy to use, keeps my hands clean and dry, keeps the floor clean and dry and it's easy one-two step."</p>
+							<p class="quote-text"><span class="english-text">"What I like about the Autoclean mop is that it solves all the problems I've had with other mops. It's Easy to use, keeps my hands clean and dry, keeps the floor clean and dry and it's easy one-two step."</span><span class="spanish-text">"Lo que me gusta del trapeador Autoclean es que resuelve todos los problemas que he tenido con otros trapeadores. Es fácil de usar, mantiene mis manos limpias y secas, mantiene el piso limpio y seco y lo hace fácilmente en dos pasos".</span></p>
 							<div class="center">
 								<img src="images/stars.png" alt="">
 							</div>
@@ -256,7 +140,7 @@
 							<div class="center">
 								<img src="images/icon_quote.png" alt="" class="quote-icon">
 							</div>
-							<p class="quote-text">"This is so easy and the floors are sparkling clean."</p>
+							<p class="quote-text"><span class="english-text">"This is so easy and the floors are sparkling clean."</span><span class="spanish-text">"Es muy fácil y los pisos quedan impecablemente limpios".</span></p>
 							<div class="center">
 								<img src="images/stars.png" alt="">
 							</div>
@@ -266,7 +150,7 @@
 							<div class="center">
 								<img src="images/icon_quote.png" alt="" class="quote-icon">
 							</div>
-							<p class="quote-text">"With this mop I can wash it. I can dry it and I know my floors are clean and dry."</p>
+							<p class="quote-text"><span class="english-text">"With this mop I can wash it. I can dry it and I know my floors are clean and dry."</span><span class="spanish-text">"A este trapeador puedo lavarlo. Puedo secarlo y sé que mis pisos están limpios y secos".</span></p>
 							<div class="center">
 								<img src="images/stars.png" alt="">
 							</div>
@@ -283,58 +167,58 @@
 			<div class="row">
 			<div class="container">
 			<div class="Fleft column50">
-				<h1 class="blue-font">The Amazing Self Cleaning &amp; Self Drying Mop &amp; Bucket System</h1>
+				<h1 class="blue-font"><span class="english-text">The Amazing Self Cleaning &amp; Self Drying Mop &amp; Bucket System</span><span class="spanish-text">El Increíble Sistema de Trapeador Con Balde de Limpieza Y Secado Automático</span></h1>
 				<div class="includes-div desktop-hide">
-					<p class="bold font20 black-font marbot30">The AutoClean Mop includes:</p>
+					<p class="bold font20 black-font marbot30"><span class="english-text">The AutoClean Mop includes:</span><span class="spanish-text">El Trapeador Autoclean Mop Incluye:</span></p>
 					<div class="points-container">
 						<div class="points-div marbot20">
 							<div class="number-div blue-number">&#x2714;</div>
-							<div class="text-div blue-text">Self-cleaning Bucket</div>
+							<div class="text-div blue-text"><span class="english-text">Self-cleaning Bucket</span><span class="spanish-text">Balde de Limpieza Automática</span></div>
 							<div class="clear"></div>
 						</div>
 						<div class="points-div marbot20">
 							<div class="number-div blue-number">&#x2714;</div>
-							<div class="text-div blue-text">Stainless Steel Handle &amp; Head</div>
+							<div class="text-div blue-text"><span class="english-text">Stainless Steel Handle &amp; Head</span><span class="spanish-text">Asa Y Cabeza de Acero Inoxidable</span></div>
 							<div class="clear"></div>
 						</div>
 						<div class="points-div marbot20">
 							<div class="number-div blue-number">&#x2714;</div>
-							<div class="text-div blue-text">Microfiber Pad</div>
+							<div class="text-div blue-text"><span class="english-text">Microfiber Pad</span><span class="spanish-text">Toallitas de Microfibra</span></div>
 							<div class="clear"></div>
 						</div>
 						<div class="points-div marbot20">
 							<div class="number-div blue-number">&#x2714;</div>
-							<div class="text-div blue-text">Instruction Manual</div>
+							<div class="text-div blue-text"><span class="english-text">Instruction Manual</span><span class="spanish-text">Manual de Instrucciones</span></div>
 							<div class="clear"></div>
 						</div>
 					</div>
 				</div>
-				<p class="font26 blue-font bold mobileFont18">30-Day Money Back Guarantee</p>
-				<a href="secureOrder.html"><div class="CTA LightBlueBack marbot15">Order Today</div></a>
+				<p class="font26 blue-font bold mobileFont18"><span class="english-text">30-Day Money Back Guarantee</span><span class="spanish-text">Garantía de Devolución del Dinero de 30 Días</span></p>
+				<a href="secureOrder.html"><div class="CTA LightBlueBack marbot15"><span class="english-text">Order Today</span><span class="spanish-text">¡Ordene Hoy!</span></div></a>
 				<img src="images/creditcards.png" alt="">
 			</div>
 			<div class="Fright mobile-hide">
 				<div class="includes-div Fleft">
-					<p class="bold font20 black-font marbot30">The AutoClean Mop includes:</p>
+					<p class="bold font20 black-font marbot30"><span class="english-text">The AutoClean Mop includes:</span><span class="spanish-text">El Trapeador Autoclean Mop Incluye:</span></p>
 					<div class="points-container">
 						<div class="points-div marbot20">
 							<div class="number-div blue-number">&#x2714;</div>
-							<div class="text-div blue-text">Self-cleaning Bucket</div>
+							<div class="text-div blue-text"><span class="english-text">Self-cleaning Bucket</span><span class="spanish-text">Balde de Limpieza Automática</span></div>
 							<div class="clear"></div>
 						</div>
 						<div class="points-div marbot20">
 							<div class="number-div blue-number">&#x2714;</div>
-							<div class="text-div blue-text">Stainless Steel Handle &amp; Head</div>
+							<div class="text-div blue-text"><span class="english-text">Stainless Steel Handle &amp; Head</span><span class="spanish-text">Asa Y Cabeza de Acero Inoxidable</span></div>
 							<div class="clear"></div>
 						</div>
 						<div class="points-div marbot20">
 							<div class="number-div blue-number">&#x2714;</div>
-							<div class="text-div blue-text">Microfiber Pad</div>
+							<div class="text-div blue-text"><span class="english-text">Microfiber Pad</span><span class="spanish-text">Toallitas de Microfibra</span></div>
 							<div class="clear"></div>
 						</div>
 						<div class="points-div marbot20">
 							<div class="number-div blue-number">&#x2714;</div>
-							<div class="text-div blue-text">Instruction Manual</div>
+							<div class="text-div blue-text"><span class="english-text">Instruction Manual</span><span class="spanish-text">Manual de Instrucciones</span></div>
 							<div class="clear"></div>
 						</div>
 					</div>
@@ -347,29 +231,10 @@
 	</div>
 		</div>
 		<footer class="pad4">
-			<p class="bold marbot20 font20 mobileFont14"><a href="secureOrder.html"><span class="english-text">Order Now</span><span class="spanish-text">Ordene Ahora</span></a> | <a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a> | <a href="terms.html">Terms and Conditions</a></p>
-			<p class="bold marbot20 font20 mobileFont14">&copy;Copyright 2019 Starlyte AutoClean Mop LLC - All Rights Reserved</p>
+			<p class="bold marbot20 font20 mobileFont14"><a href="secureOrder.html"><span class="english-text">Order Now</span><span class="spanish-text">Ordene Ahora</span></a> | <a href="privacy.html"><span class="english-text">Privacy Policy</span><span class="spanish-text">Política de Privacidad</span></a> | <a href="contact.html"><span class="english-text">Contact Us</span><span class="spanish-text">Contáctenos</span></a> | <a href="terms.html"><span class="english-text">Terms and Conditions</span><span class="spanish-text">Términos Y Condiciones</span></a></p>
+			<p class="bold marbot20 font20 mobileFont14"><span class="english-text">&copy;Copyright 2019 Starlyte AutoClean Mop LLC - All Rights Reserved</span><span class="spanish-text">&copy;Copyright 2019 Starlyte AutoClean Mop LLC – Todos los Derechos Reservados</span></p>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script>
-			$(document).ready(function() {
-				$(".language-button").click(function() {
-
-					function SpanishOn() {
-						$(".language-button").html("English");
-						$(".english-text").hide();
-						$(".spanish-text").show();
-					}
-
-					function SpanishOff() {
-						$(".language-button").html("Español");
-						$(".spanish-text").hide();
-						$(".english-text").show();
-					}
-
-					return (this.tog = !this.tog) ? SpanishOn() : SpanishOff();
-				})
-			})
-		</script>
+		<script src="js/main.js"></script>
 	</body>
 	</html>
